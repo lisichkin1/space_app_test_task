@@ -8,7 +8,7 @@ export const Banner = () => {
       <div className={styles.banner__container}>
         <img
           className={styles.logo}
-          src="/assets/icons/Group102.svg"
+          src="../../../public/assets/icons/Group102.svg"
           alt="За стеклом"
           width="452px"
           height="80px"
@@ -19,7 +19,7 @@ export const Banner = () => {
             <div className={styles.banner__cards__left}>
               <IconUI
                 className={styles.banner__cards__icon}
-                url={'/assets/icons/data.svg'}
+                url={'../../../public/assets/icons/data.svg'}
                 width={'47px'}
                 height={'47px'}
               />
@@ -38,7 +38,7 @@ export const Banner = () => {
               <div className={styles.banner__cards__item}>
                 <IconUI
                   className={`${styles.banner__cards__icon} ${styles.banner__cards__icon_padding}`}
-                  url={'/assets/icons/balls.svg'}
+                  url={'../../../public/assets/icons/balls.svg'}
                   width={'37px'}
                   height={'37px'}
                 />
@@ -47,7 +47,7 @@ export const Banner = () => {
               <div className={styles.banner__cards__item}>
                 <IconUI
                   className={`${styles.banner__cards__icon} ${styles.banner__cards__icon_padding}`}
-                  url={'/assets/icons/stat.svg'}
+                  url={'../../../public/assets/icons/stat.svg'}
                   width={'37px'}
                   height={'37px'}
                 />
@@ -56,7 +56,7 @@ export const Banner = () => {
               <div className={styles.banner__cards__item}>
                 <IconUI
                   className={`${styles.banner__cards__icon} ${styles.banner__cards__icon_padding}`}
-                  url={'/assets/icons/money.svg'}
+                  url={'../../../public/assets/icons/money.svg'}
                   width={'37px'}
                   height={'37px'}
                 />
@@ -65,7 +65,7 @@ export const Banner = () => {
             </div>
           </div>
           <div className={styles.banner__topground}>
-            <img src="/assets/images/Vector (1).png" alt="За стеклом" />
+            <img src="../../../public/assets/images/Vector (1).png" alt="За стеклом" />
           </div>
         </div>
       </div>

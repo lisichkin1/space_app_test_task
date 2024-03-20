@@ -2,37 +2,37 @@
 @import 'libs/variables';
 @font-face {
   font-family: 'PF Agora Sans Pro';
-  src: url('/public/assets/fonts/PFAgoraSansPro-XThin.woff2') format('woff2');
+  src: url('../public/assets/fonts/PFAgoraSansPro-XThin.woff2') format('woff2');
   font-weight: 100;
 }
 @font-face {
   font-family: 'PF Agora Sans Pro';
-  src: url('/public/assets/fonts/PFAgoraSansPro-Thin.woff2') format('woff2');
+  src: url('../public/assets/fonts/PFAgoraSansPro-Thin.woff2') format('woff2');
   font-weight: 200;
 }
 @font-face {
   font-family: 'PF Agora Sans Pro';
-  src: url('/public/assets/fonts/PFAgoraSansPro-Light.woff2') format('woff2');
+  src: url('../public/assets/fonts/PFAgoraSansPro-Light.woff2') format('woff2');
   font-weight: 300;
 }
 @font-face {
   font-family: 'PF Agora Sans Pro';
-  src: url('/public/assets/fonts/PFAgoraSansPro-Regular.woff2') format('woff2');
+  src: url('../public/assets/fonts/PFAgoraSansPro-Regular.woff2') format('woff2');
   font-weight: 400;
 }
 @font-face {
   font-family: 'PF Agora Sans Pro';
-  src: url('/public/assets/fonts/PFAgoraSansPro-Medium.woff2') format('woff2');
+  src: url('../public/assets/fonts/PFAgoraSansPro-Medium.woff2') format('woff2');
   font-weight: 500;
 }
 @font-face {
   font-family: 'PF Agora Sans Pro';
-  src: url('/public/assets/fonts/PFAgoraSansPro-Bold.woff2') format('woff2');
+  src: url('../public/assets/fonts/PFAgoraSansPro-Bold.woff2') format('woff2');
   font-weight: 700;
 }
 @font-face {
   font-family: 'PF Agora Sans Pro';
-  src: url('/public/assets/fonts/PFAgoraSansPro-Black.woff2') format('woff2');
+  src: url('../public/assets/fonts/PFAgoraSansPro-Black.woff2') format('woff2');
   font-weight: 900;
 }
 * {
@@ -46,7 +46,7 @@
 }
 @media (max-width: 600px) {
   #myChart {
-    width: 300px; /* Установите требуемую ширину для мобильных устройств */
-    height: 300px; /* Установите требуемую высоту для мобильных устройств */
+    width: 300px;
+    height: 300px;
   }
 }

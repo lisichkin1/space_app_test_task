@@ -7,7 +7,7 @@
   "scripts": {
     "start": "npm run build && node server/index.js",
     "dev": "set NODE_ENV=development && npx webpack serve --config webpack.config.js",
-    "build": "set NODE_ENV=production && npx webpack --config webpack.config.js",
+    "build": "set NODE_ENV=production && npx webpack --config webpack.config.js ",
     "build:dev": "set NODE_ENV=development && npx webpack --config webpack.config.js",
     "build:watch": "set NODE_ENV=development && npx webpack --config webpack.config.js --watch",
     "deploy": "gh-pages -d dist",
@@ -25,12 +25,14 @@
     "express": "^4.17.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "svg-url-loader": "^8.0.0",
     "swiper": "^11.0.7"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-react": "^7.16.5",
+    "@svgr/webpack": "^8.1.0",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.5.1",

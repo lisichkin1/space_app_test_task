@@ -3,7 +3,12 @@
     "module": "commonjs",
     "target": "es5",
     "jsx": "react",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

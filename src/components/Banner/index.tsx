@@ -1,4 +1,9 @@
 import React from 'react';
+import Data from '../../../public/assets/icons/data.svg';
+import Logo from '../../../public/assets/icons/Group102.svg';
+import Balls from '../../../public/assets/icons/balls.svg';
+import Stat from '../../../public/assets/icons/stat.svg';
+import Money from '../../../public/assets/icons/money.svg';
 
 import styles from './index.module.scss';
 import { IconUI } from '../../UI/IconUI';
@@ -6,20 +11,14 @@ export const Banner = () => {
   return (
     <div className={styles.banner}>
       <div className={styles.banner__container}>
-        <img
-          className={styles.logo}
-          src="../../../public/assets/icons/Group102.svg"
-          alt="За стеклом"
-          width="452px"
-          height="80px"
-        />
+        <img className={styles.logo} src={Logo} alt="За стеклом" width="452px" height="80px" />
         <div className={styles.banner__content}>
           <h2 className={styles.banner__title}>AI-Driven Analytics Platform</h2>
           <div className={styles.banner__cards}>
             <div className={styles.banner__cards__left}>
               <IconUI
                 className={styles.banner__cards__icon}
-                url={'../../../public/assets/icons/data.svg'}
+                url={Data}
                 width={'47px'}
                 height={'47px'}
               />
@@ -38,7 +37,7 @@ export const Banner = () => {
               <div className={styles.banner__cards__item}>
                 <IconUI
                   className={`${styles.banner__cards__icon} ${styles.banner__cards__icon_padding}`}
-                  url={'../../../public/assets/icons/balls.svg'}
+                  url={Balls}
                   width={'37px'}
                   height={'37px'}
                 />
@@ -47,7 +46,7 @@ export const Banner = () => {
               <div className={styles.banner__cards__item}>
                 <IconUI
                   className={`${styles.banner__cards__icon} ${styles.banner__cards__icon_padding}`}
-                  url={'../../../public/assets/icons/stat.svg'}
+                  url={Stat}
                   width={'37px'}
                   height={'37px'}
                 />
@@ -56,7 +55,7 @@ export const Banner = () => {
               <div className={styles.banner__cards__item}>
                 <IconUI
                   className={`${styles.banner__cards__icon} ${styles.banner__cards__icon_padding}`}
-                  url={'../../../public/assets/icons/money.svg'}
+                  url={Money}
                   width={'37px'}
                   height={'37px'}
                 />
@@ -64,9 +63,7 @@ export const Banner = () => {
               </div>
             </div>
           </div>
-          <div className={styles.banner__topground}>
-            <img src="../../../public/assets/images/Vector (1).png" alt="За стеклом" />
-          </div>
+          <div className={styles.banner__topground}></div>
         </div>
       </div>
     </div>

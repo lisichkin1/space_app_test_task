@@ -17,12 +17,12 @@ export const QuartalChart = () => {
               {
                 label: '',
                 data: [39, 43, 49, 51, 54, 56],
-                backgroundColor: '#e01e2e', // Цвет заливки красный
-                borderColor: '#e01e2e', // Цвет границы красный
+                backgroundColor: '#e01e2e',
+                borderColor: '#e01e2e',
                 borderWidth: 2,
-                pointBackgroundColor: '#e01e2e', // Цвет точек красный
-                pointBorderColor: '#e01e2e', // Цвет границ точек красный
-                cubicInterpolationMode: 'monotone', // Используем кривые Безье для плавных линий
+                pointBackgroundColor: '#e01e2e',
+                pointBorderColor: '#e01e2e',
+                cubicInterpolationMode: 'monotone',
                 pointBorderWidth: 4,
               },
             ],

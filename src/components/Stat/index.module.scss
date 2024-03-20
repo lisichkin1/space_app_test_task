@@ -40,6 +40,9 @@
     flex: 1;
     position: relative;
     &__img {
+      width: 500px;
+      height: 600px;
+      background: url('../../../public/assets/images/Group31.png') center/contain no-repeat;
       position: absolute;
       top: 162px;
       left: 50px;

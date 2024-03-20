@@ -1,5 +1,9 @@
 import React from 'react';
 import styles from './index.module.scss';
+import Bag from '../../../public/assets/icons/bag.svg';
+import Arrow from '../../../public/assets/icons/arrow.svg';
+import Data from '../../../public/assets/icons/data.svg';
+import Balls from '../../../public/assets/icons/balls.svg';
 import { IconUI } from '../../UI/IconUI';
 export const InformationContent = () => {
   return (
@@ -13,7 +17,7 @@ export const InformationContent = () => {
           <li className={styles.information__list__item}>
             <IconUI
               className={`${styles.information__icon} ${styles.information__icon_padding}`}
-              url={'/assets/icons/balls.svg'}
+              url={Balls}
               width={'37px'}
               height={'37px'}
             />
@@ -22,7 +26,7 @@ export const InformationContent = () => {
           <li className={styles.information__list__item}>
             <IconUI
               className={`${styles.information__icon} ${styles.information__icon_padding}`}
-              url={'/assets/icons/data.svg'}
+              url={Data}
               width={'37px'}
               height={'37px'}
             />
@@ -31,7 +35,7 @@ export const InformationContent = () => {
           <li className={styles.information__list__item}>
             <IconUI
               className={`${styles.information__icon} ${styles.information__icon_padding}`}
-              url={'/assets/icons/bag.svg'}
+              url={Bag}
               width={'37px'}
               height={'37px'}
             />
@@ -47,26 +51,26 @@ export const InformationContent = () => {
         <ul className={styles.information__list__right}>
           <li className={styles.information__list__item__right}>
             <span>Ежемесячные</span>
-            <img src="/assets/icons/arrow.svg" />
+            <img src={Arrow} />
             <span>Еженедельные</span>
           </li>
           <li className={styles.information__list__item__right}>
             <span>Сырые данные</span>
-            <img src="/assets/icons/arrow.svg" />
+            <img src={Arrow} />
             <span className={styles.information__text__wrap}>Промо/регулярные</span>
           </li>
           <li className={styles.information__list__item__right}>
             <span>
               Промо/ <br /> регулярные
             </span>
-            <img src="/assets/icons/arrow.svg" />
+            <img src={Arrow} />
             <span>
               Базовые/ <br /> Инкрементальные
             </span>
           </li>
           <li className={styles.information__list__item__right}>
             <span>Дистрибуция</span>
-            <img src="/assets/icons/arrow.svg" />
+            <img src={Arrow} />
             <span>
               Конкретное <br /> окружение
             </span>

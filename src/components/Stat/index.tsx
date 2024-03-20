@@ -25,11 +25,7 @@ export const Stat = () => {
               <RadialChart />
             </div>
           </div>
-          <img
-            className={styles.stat__right__img}
-            src={'/assets/images/Group31.png'}
-            alt="За стеклом"
-          />
+          <div className={styles.stat__right__img} />
         </div>
       </div>
     </div>

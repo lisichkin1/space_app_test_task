@@ -53,13 +53,11 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'assets/icons/', // Указываем путь для сохранения файлов SVG
+        use: [
+          {
+            loader: 'file-loader', // или 'url-loader'
           },
-        },
+        ],
       },
     ],
   },

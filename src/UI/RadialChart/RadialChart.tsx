@@ -2,7 +2,7 @@ import Chart, { ChartConfiguration } from 'chart.js/auto';
 import React, { useEffect, useRef } from 'react';
 
 import styles from './RadialChart.module.scss';
-// Вместо использования red, можно создать собственный цвет, например:
+
 const redColor = 'rgb(255, 99, 132)';
 
 export const RadialChart = () => {

@@ -5,10 +5,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-import { A11y, Navigation, Pagination, Scrollbar } from 'swiper/modules'; // импорт Pagination из SwiperCore
+import { A11y, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import { InformationContent } from '../InformationContent';
-
-// инициализация SwiperCore с необходимыми модулями
 
 export const Information = () => {
   return (
@@ -21,7 +19,7 @@ export const Information = () => {
           direction="horizontal"
           slidesPerView={1}
           modules={[Pagination]}
-          pagination={{ clickable: true }} // включение пагинации с возможностью клика по точкам
+          pagination={{ clickable: true }}
           className={styles.mySwiper}>
           <SwiperSlide>
             <InformationContent />

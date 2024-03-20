@@ -1,1 +1,2 @@
-# space_app_test_task
+# react-with-webpack-template
+Template for react with webpack config and backend server for bundle.

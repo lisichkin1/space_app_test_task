@@ -1,0 +1,12 @@
+.chart {
+  width: '100%';
+  height: '380px';
+}
+@media (max-width: 520px) {
+  .chart {
+    width: 320px !important;
+    height: 250px !important;
+
+    // Добавьте дополнительные стили по желанию
+  }
+}

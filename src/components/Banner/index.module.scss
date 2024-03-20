@@ -1,0 +1,161 @@
+@import '../../../scss/libs/variables';
+.banner {
+  width: 100%;
+  height: 105vh;
+  min-height: 980px;
+  background: url('../../../public/assets/images/Artboard@7x\ 1.jpg') center/cover no-repeat;
+  padding-top: 150px;
+  position: relative;
+  &__container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 80px;
+  }
+  &__title {
+    color: $full-white;
+    font-size: 64px;
+    line-height: 70px;
+    font-weight: 900;
+    text-align: center;
+  }
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 86px;
+  }
+  &__topground {
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+}
+.banner__cards {
+  width: 100%;
+  display: flex;
+  column-gap: 30px;
+  &__left {
+    width: 600px;
+    background: url('../../../public/assets/images/Rectangle\ 1.jpg') center/105% no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    padding-bottom: 46px;
+    border-radius: 20px;
+
+    border: 2px solid rgba(100, 100, 100, 0.33);
+  }
+  &__icon {
+    padding: 22px;
+    background-color: $red;
+    width: fit-content;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_padding {
+      padding: 18px;
+      margin-top: 6px;
+    }
+  }
+
+  &__title {
+    color: $full-white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  &__title_margin {
+    margin-top: 23px;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    color: $full-white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &__right {
+    display: flex;
+    column-gap: 31px;
+  }
+  &__item {
+    height: fit-content;
+
+    padding: 20px 0;
+    width: 180px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    background: $gray;
+    border: 2px solid $gray-border;
+    span {
+      color: $full-white;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      text-align: center;
+      width: 100%;
+      display: block;
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .banner {
+    min-height: 1200px;
+    &__cards {
+      flex-direction: column;
+      row-gap: 20px;
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+}
+@media (max-width: 680px) {
+  .banner {
+    min-height: 1400px;
+    &__cards {
+      align-items: center;
+      &__left {
+        background: url('../../../public/assets/images/Rectangle\ 1.jpg') center/120% no-repeat;
+        width: 500px;
+      }
+      &__right {
+        row-gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+@media (max-width: 520px) {
+  .banner {
+    min-height: 1800px;
+    &__cards {
+      &__left {
+        background: url('../../../public/assets/images/Rectangle\ 1.jpg') center/cover no-repeat;
+        width: 300px;
+      }
+      &__right {
+        row-gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
+  .logo {
+    padding: 10px;
+    width: 100%;
+  }
+}

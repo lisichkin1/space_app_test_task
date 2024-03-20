@@ -1,0 +1,115 @@
+@import '../../../scss/libs/variables';
+.information {
+  &__subtitle {
+    position: relative;
+    width: fit-content;
+    span {
+      font-size: 96px;
+      font-weight: 900;
+      line-height: 115px;
+      color: $light-gray;
+    }
+    h4 {
+      color: $black;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300px;
+      transform: translate(-10%, -10%);
+    }
+  }
+  &__icon {
+    padding: 22px;
+    background-color: $red;
+    width: fit-content;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_padding {
+      padding: 18px;
+      margin-top: 6px;
+    }
+  }
+  &__content {
+    display: flex;
+    column-gap: 270px;
+    background: url('../../../public/assets/images/bg.png') center/40% no-repeat;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 42px;
+    transform: translateX(10px);
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 40px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 46px;
+    &__item {
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+      p {
+        width: 246px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $black;
+      }
+    }
+  }
+  &__list__right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  &__list__item__right {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    span {
+      color: rgb(0, 0, 0);
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 32px;
+      display: block;
+      width: 210px;
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .information {
+    &__content {
+      flex-direction: column;
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+}
+@media (max-width: 680px) {
+  .information {
+    &__list {
+      &__item {
+        &__right {
+          flex-direction: column;
+          row-gap: 20px;
+          img {
+            position: relative;
+            transform: rotateZ(90deg);
+          }
+        }
+      }
+    }
+  }
+}
